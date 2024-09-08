@@ -1,0 +1,1 @@
+Get-LocalGroupMember Administrators | Select-Object Name, PrincipalSource | Where-Object { $_.PrincipalSource -eq "Local" }

@@ -1,0 +1,1 @@
+Move-ADObject -Identity "CN=Peter Bankov,OU=Accounting,DC=Fabrikam,DC=com" -TargetPath "OU=Accounting,DC=Europe,DC=Fabrikam,DC=com" -TargetServer "server01.europe.fabrikam.com"

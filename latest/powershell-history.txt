@@ -1,0 +1,11 @@
+Get history all time:
+cat C:\Users\<user>\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
+Get current history and time stamps:
+Get-History | Format-List -Property *
+
+Export history to XML:
+Get-History | Export-Clixml -Path c:\ps\commands_hist.xml
+
+Clear History:
+Remove-Item (Get-PSReadlineOption).HistorySavePath
